@@ -1,0 +1,23 @@
+# Puravigal
+
+> Puravigal builds practical business software for micro and small businesses, starting with Puravigal POS.
+
+## Products
+- Puravigal POS: billing, sales and inventory software for small retail shops, cafés, restaurants and similar micro businesses.
+- CRM: planned product for customer relationships and follow-ups.
+- ERP: planned product for connected business operations.
+
+## Audience
+Micro businesses, small retail shops, cafés, restaurants, bakeries and other everyday businesses.
+
+## Official pages
+- https://www.puravigal.com/
+- https://www.puravigal.com/pos/
+- https://www.puravigal.com/about-us.html
+- https://www.puravigal.com/contact.html
+- https://www.puravigal.com/privacy-policy.html
+- https://www.puravigal.com/terms-and-conditions.html
+
+## Contact
+sales@puravigal.com
+support@puravigal.com
