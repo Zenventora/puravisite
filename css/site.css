@@ -160,16 +160,17 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 @media(max-width:1000px){.business-fit-intro,.business-fit-stage{grid-template-columns:1fr}.business-fit-intro{gap:20px}.business-fit-visual{min-height:500px}.business-fit-list{grid-template-columns:1fr 1fr}.business-fit-list>a{min-height:100px}}
 @media(max-width:650px){.business-fit-intro h2{font-size:38px}.business-fit-visual{min-height:350px;padding:25px 10px}.fit-float-two{right:10px}.fit-float-one{left:10px}.fit-float-three{left:10px;bottom:15px}.business-fit-list{grid-template-columns:1fr}.business-fit-list img{width:50px;height:50px}.business-fit-list>a{min-height:78px}.business-fit-bottom{flex-direction:column;gap:5px}}
 
-/* CTA safeguard — keep POS action buttons visible and content-sized */
+/* CTA fix — stable content-sized buttons with a safe fallback */
 .pos-site .actions .btn{
   display:inline-flex!important;
-  width:auto!important;
+  width:max-content!important;
   min-width:132px;
   min-height:48px;
   height:auto!important;
   padding:13px 20px!important;
   align-items:center;
   justify-content:center;
+  gap:6px;
   font-family:inherit;
   font-size:14px!important;
   line-height:1.2!important;
@@ -178,9 +179,37 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
   visibility:visible!important;
   opacity:1!important;
   flex:0 0 auto;
+  overflow:visible!important;
 }
-.pos-site .actions .product-btn{color:#fff!important;background:var(--product-gradient)!important;border:1px solid transparent!important}
-.pos-site .actions .product-outline{color:var(--product)!important;background:#fff!important;border:1px solid var(--product-line)!important}
-/* Fallback for an accidentally empty CTA while keeping the DOM accessible after the next content fix. */
+.pos-site .actions .product-btn{
+  color:#fff!important;
+  background:linear-gradient(110deg,#4b66e8,#7a4fd4)!important;
+  border:1px solid transparent!important;
+  box-shadow:0 12px 30px rgba(91,76,202,.22)!important;
+}
+.pos-site .actions .product-outline{
+  color:#5140b8!important;
+  background:#fff!important;
+  border:1px solid #ded8f7!important;
+}
 .pos-site .actions .product-btn:empty::after{content:'Start free';}
 .pos-site .actions .product-outline:empty::after{content:'Explore features';}
+.pos-site .actions .btn span{display:inline!important;visibility:visible!important;opacity:1!important;}
+
+/* Match the proven main-site CTA treatment for the product spotlight CTA. */
+.first-product .product-btn{
+  color:#182033!important;
+  background:#fff!important;
+  border:1px solid #e4e7ef!important;
+  box-shadow:0 14px 32px rgba(37,41,70,.10)!important;
+  display:inline-flex!important;
+  width:max-content!important;
+  min-width:0;
+  min-height:48px;
+  padding:13px 18px!important;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  font-weight:800!important;
+}
+.first-product .product-btn span{display:inline!important;color:#182033!important;visibility:visible!important;opacity:1!important;}
