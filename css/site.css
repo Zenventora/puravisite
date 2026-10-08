@@ -127,3 +127,9 @@
 .industry-card .industry-icon:before{font-size:16px}.industry-card:nth-child(1) .industry-icon:before{content:'▦'}.industry-card:nth-child(2) .industry-icon:before{content:'◒'}.industry-card:nth-child(3) .industry-icon:before{content:'☕'}.industry-card:nth-child(4) .industry-icon:before{content:'▯'}.industry-card:nth-child(5) .industry-icon:before{content:'▤'}.industry-card:nth-child(6) .industry-icon:before{content:'◫'}
 .industry-card img{background:linear-gradient(145deg,#f8f7ff,#f1f3fb);border-radius:18px;padding:12px}
 .industry-card{overflow:hidden}.industry-card:hover img{transform:scale(1.025);transition:.25s ease}
+
+/* Footer alignment */
+footer .footer-grid:not(.product-footer){grid-template-columns:minmax(240px,2fr) repeat(4,minmax(120px,1fr));align-items:start}
+footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
+@media(max-width:900px){footer .footer-grid:not(.product-footer),footer .product-footer{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){footer .footer-grid:not(.product-footer),footer .product-footer{grid-template-columns:1fr}}
