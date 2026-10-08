@@ -30,3 +30,4 @@
 .pos-site .auth-card select{width:100%;padding:13px 14px;border:1px solid #dfe4ec;border-radius:11px;font:inherit;background:#fff;color:#344054}
 .pos-site .auth-switch a,.pos-site .form-note a{color:var(--product)}
 @media(max-width:900px){.product-header nav{display:none}.product-nav{min-height:68px}}
+.pos-screen-showcase{display:block;width:100%;height:auto;border:1px solid var(--product-line);border-radius:28px;box-shadow:0 25px 70px rgba(67,57,130,.12)}.product-auth .eyebrow{color:var(--product)}
