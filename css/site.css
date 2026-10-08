@@ -213,3 +213,30 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
   font-weight:800!important;
 }
 .first-product .product-btn span{display:inline!important;color:#182033!important;visibility:visible!important;opacity:1!important;}
+
+/* POS brand lockup — logo and POS must always stay on one line */
+.pos-site .product-brand{
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  flex-wrap:nowrap!important;
+  width:max-content;
+  max-width:100%;
+  gap:10px;
+  white-space:nowrap!important;
+}
+.pos-site .product-brand img{
+  display:block!important;
+  flex:0 0 auto!important;
+  width:145px!important;
+  max-width:none!important;
+  height:auto!important;
+}
+.pos-site .product-brand span{
+  display:inline-flex!important;
+  flex:0 0 auto!important;
+  align-items:center;
+  white-space:nowrap!important;
+  line-height:1!important;
+  margin:0!important;
+}
