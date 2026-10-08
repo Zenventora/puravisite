@@ -15,7 +15,7 @@ Puravigal is being developed as a broader business software platform. Additional
 - https://www.puravigal.com/pos/features.html
 - https://www.puravigal.com/pos/pricing.html
 - https://www.puravigal.com/pos/industries/
-- https://www.puravigal.com/resources.html
+- https://www.puravigal.com/pos/resources.html
 - https://www.puravigal.com/business-types.html
 - https://www.puravigal.com/about-us.html
 - https://www.puravigal.com/contact.html
