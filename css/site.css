@@ -272,3 +272,10 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 .pos-site .feature-icon,.pos-site .price-icon.filled,.pos-site .product-icon{background:var(--gradient)}
 .pos-site .first-product-visual{background:radial-gradient(circle at 75% 20%,rgba(230,0,99,.12),transparent 34%),linear-gradient(135deg,#f5f8ff,#fff0f6)}
 @media(max-width:700px){.faq-section .faq details,.seo-faq details{padding:19px 17px}.faq-section .faq summary,.seo-faq summary{font-size:16px}.not-found-card .actions{justify-content:center}}
+
+/* Navigation state and social footer layout */
+.site-header nav a.is-active,.product-header nav a.is-active{color:var(--blue);background:rgba(35,91,222,.07);border-radius:9px}
+.product-footer{grid-template-columns:1.6fr .85fr .85fr .85fr 1.2fr}
+.social-footer>b{display:block;margin-bottom:15px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#344054}
+@media(max-width:900px){.product-footer{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.product-footer{grid-template-columns:1fr}}
