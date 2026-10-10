@@ -84,3 +84,14 @@ This is the running audit record. Add every newly reported correction here and k
 - Confirm the auth-status endpoint returns `{ "authenticated": true }` for a signed-in session and supports credentialed CORS from both the preview and custom domain.
 - Confirm GitHub Pages/custom-domain DNS and actual HTTP 404 status separately.
 - Do not claim a page has passed performance/accessibility or live broken-link checks until those checks are run and their results recorded.
+
+
+## 2026-10-10 follow-up — shared POS visual patterns
+
+- [x] POS primary and navigation CTA colors now use the Puravigal blue-to-pink gradient tokens; confirm the deployed preview visually.
+- [x] Added a reusable `unified-story` numbered left/right section treatment to pricing philosophy, resources intro/story, and business-type overview sections.
+- [x] POS FAQ accordions now share a consistent container width, card spacing, border, and open state; manual keyboard/visual retest remains pending.
+- [x] Restaurant vertical illustration now has descriptive alt text and a fallback to the shared POS dashboard illustration if the restaurant SVG fails to load.
+- [x] Removed duplicate “Follow Puravigal” social block from the restaurant vertical footer.
+- [ ] Identify and remove any actual carousel pagination markup from the requested idea/story section; current POS homepage source inspection did not find visible dot pagination in the identified workflow/about sections. Do not hide unrelated controls.
+- [ ] Run full deployed visual QA at desktop/tablet/mobile and validate actual image load, CTA contrast, keyboard focus, and login/signup session flow.
