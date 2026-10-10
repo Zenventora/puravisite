@@ -44,6 +44,7 @@ This is the running audit record. Add every newly reported correction here and k
 - [ ] Confirm missing URLs return a real 404 status on the deployed host (a GitHub Pages custom 404 file alone may still be served with a soft-404; verify live response).
 - [ ] Main homepage FAQ container width/alignment matches the shared content grid.
 - [ ] POS FAQ design: consistent spacing, accordion states, focus treatment, and responsive layout across all POS pages.
+- [x] Removed duplicate social footer blocks found on POS overview and features pages. Main and POS social icon styling is shared; verify visual rendering on deployed pages.
 - [ ] Social icons visible and consistent in main site and POS footers; retain existing verified links.
 - [ ] Wait for user-provided official LinkedIn, WhatsApp and YouTube URLs before linking those icons to real profiles. Never use generic placeholder destinations.
 - [ ] Verify older social URLs/assets are retained where valid.
@@ -60,6 +61,8 @@ This is the running audit record. Add every newly reported correction here and k
 1. **404 page:** made its stylesheet, favicon, logo and navigation paths adapt to GitHub Pages project preview (`/puravisite/`) and the custom domain root (`/`). Commit: `8d632965c1e16b082dd06764d0a85f5f31e313ab`.
 2. **POS session-aware CTA:** common `js/site.js` checks `https://pos.puravigal.com/api/auth/status` with `credentials: include`. Authenticated response shows “Access Now”; otherwise shows “Get Started Free”. API/network failures keep the signup CTA visible. Commit: `32b8751eea2bd8ab0db57d47479d4ab8a9ad9dcb`.
 3. **Navigation accessibility:** menu button expanded state is synchronized; current navigation links receive `aria-current="page"`; pricing toggle buttons expose `aria-pressed`. Same `js/site.js` commit above.
+4. **Homepage markup:** removed an extra `>` in the homepage footer markup. Commit: `4cb4bd930e31ef4dc39f7ef05d2e02a91b33e5f7`.
+5. **POS footers:** removed duplicate social blocks from `pos/index.html` and `pos/features.html`; removed a generic LinkedIn destination so the icon remains pending until the official URL is supplied. Commits: `11af310b62635eda6dae69cd2b86aafd81ae547f` and `a8eb6f25604bc3178888ad3116f856a82e5ea506`.
 
 ## Known social links
 
