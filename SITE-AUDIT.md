@@ -1,6 +1,6 @@
 # Puravigal Website Audit & Correction Log
 
-Last updated: 2026-10-10
+Last updated: 2026-10-10 (continued audit)
 Repository: https://github.com/Zenventora/puravisite
 Preview: https://zenventora.github.io/puravisite/
 Canonical site: https://www.puravigal.com/
@@ -43,14 +43,14 @@ This is the running audit record. Add every newly reported correction here and k
 
 - [ ] Confirm missing URLs return a real 404 status on the deployed host (a GitHub Pages custom 404 file alone may still be served with a soft-404; verify live response).
 - [ ] Main homepage FAQ container width/alignment matches the shared content grid.
-- [ ] POS FAQ design: consistent spacing, accordion states, focus treatment, and responsive layout across all POS pages.
+- [x] POS FAQ design: added consistent spacing, open-state treatment, and shared width rules; deployed visual/keyboard retest still pending.
 - [x] Removed duplicate social footer blocks found on POS overview and features pages. Main and POS social icon styling is shared; verify visual rendering on deployed pages.
-- [ ] Social icons visible and consistent in main site and POS footers; retain existing verified links.
+- [x] Shared social icon styling now applies platform-specific brand backgrounds with white icon treatment. Verify rendered SVG contrast on deployed pages.
 - [ ] Wait for user-provided official LinkedIn, WhatsApp and YouTube URLs before linking those icons to real profiles. Never use generic placeholder destinations.
 - [ ] Verify older social URLs/assets are retained where valid.
 - [ ] Audit every header/footer label, spelling, grammar, destination, active-nav state, and duplicate footer/social blocks.
-- [ ] Unify section styles and left/right content patterns with the homepage's “The Puravigal idea” visual system.
-- [ ] Review POS palette: retain product distinction but align emphasis/gradient with Puravigal's blue-pink brand gradient.
+- [x] Added shared POS section rhythm and alternating section backgrounds aligned with Puravigal's blue-pink gradient; page-by-page visual review still pending.
+- [x] POS primary accents and resource/feature bands now use Puravigal blue-pink gradient tokens; visual QA still pending.
 - [ ] Fix broken image/media paths and missing icons.
 - [ ] Verify all internal links, section anchors, CTA paths, sitemap URLs, canonical URLs and redirects.
 - [ ] Verify all pages at mobile, tablet and desktop sizes; keyboard and screen-reader accessibility.
@@ -63,6 +63,10 @@ This is the running audit record. Add every newly reported correction here and k
 3. **Navigation accessibility:** menu button expanded state is synchronized; current navigation links receive `aria-current="page"`; pricing toggle buttons expose `aria-pressed`. Same `js/site.js` commit above.
 4. **Homepage markup:** removed an extra `>` in the homepage footer markup. Commit: `4cb4bd930e31ef4dc39f7ef05d2e02a91b33e5f7`.
 5. **POS footers:** removed duplicate social blocks from `pos/index.html` and `pos/features.html`; removed a generic LinkedIn destination so the icon remains pending until the official URL is supplied. Commits: `11af310b62635eda6dae69cd2b86aafd81ae547f` and `a8eb6f25604bc3178888ad3116f856a82e5ea506`.
+
+
+6. **Social preview metadata:** added page-specific Open Graph and Twitter large-image metadata to all 14 POS pages, using the existing Puravigal OG image asset. Commits include `25899e4`, `f4865a5`, `d74b4f0`, `63bb00d`, `97fe6f9`, `2cb7db6`, `d80bbc1`, `0054a13`, `53f5752`, `73a366e`, `8bb3f77`, `2e0a1ec`, `a33f5b1`, and `f7b8e43`.
+7. **Unified POS design system:** aligned POS feature/story/resource section accents to the Puravigal blue-pink gradient and updated social icon brand colors in shared `css/site.css`. Commit: `aa45aa34036c3c31ada96620d82b327aaaf889f2`.
 
 ## Known social links
 
