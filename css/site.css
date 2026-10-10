@@ -304,3 +304,14 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 .pos-site .pos-product-band,.pos-site .pos-closing-story{background:linear-gradient(110deg,rgba(35,91,222,.06),rgba(230,0,99,.06))}
 .pos-site .pos-resource-hero{background:radial-gradient(circle at 78% 18%,rgba(230,0,99,.10),transparent 30%),linear-gradient(110deg,rgba(35,91,222,.08),rgba(230,0,99,.06),#fff)}
 @media(prefers-reduced-motion:reduce){.social-links a,.business-fit-list>a,.resource-card,.faq-section .faq details,.seo-faq details{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* POS shared brand theme and reusable numbered story blocks */
+.pos-site{--product-gradient:linear-gradient(110deg,var(--blue),var(--pink));--product:#235BDE;--product-deep:#1745b8;--product-soft:#f5f7ff;--product-line:#e2e7f5}
+.pos-site .product-btn,.pos-site .product-nav-cta,.pos-site .actions .product-btn{color:#fff!important;background:var(--gradient)!important;border-color:transparent!important;box-shadow:0 12px 30px rgba(35,91,222,.18)!important}
+.pos-site .product-outline{color:var(--blue)!important;background:#fff!important;border:1px solid var(--product-line)!important}
+.pos-site .final-cta{background:var(--gradient)}.pos-site .final-cta .eyebrow{color:#fff}.pos-site .final-cta .btn.light{background:#fff!important;color:#182033!important;border-color:rgba(255,255,255,.8)!important}
+.pos-site .unified-story .feature-list{counter-reset:workflow}.pos-site .unified-story .feature-list>div{position:relative;padding:4px 0 25px 54px;margin:0 0 25px;border-bottom:1px solid var(--line)}.pos-site .unified-story .feature-list>div:before{counter-increment:workflow;content:"0" counter(workflow);position:absolute;left:0;top:0;display:grid;place-items:center;width:38px;height:38px;border-radius:12px;color:#fff;font-size:12px;font-weight:850;background:var(--gradient)}
+.pos-site .seo-faq .container{width:min(900px,92%);max-width:900px;margin-inline:auto}.pos-site .seo-faq .section-head{max-width:760px;margin:0 auto 34px;text-align:center}.pos-site .seo-faq details{padding:22px 24px;margin:0 0 12px;border:1px solid var(--product-line);border-radius:16px;background:#fff}.pos-site .seo-faq details[open]{border-color:rgba(35,91,222,.35)}.pos-site .seo-faq summary{position:relative;padding-right:34px;list-style:none}.pos-site .seo-faq summary::-webkit-details-marker{display:none}.pos-site .seo-faq summary:after{content:"+";position:absolute;right:0;top:0;color:var(--blue);font-size:22px}.pos-site .seo-faq details[open] summary:after{content:"−"}
+.pos-site .idea-dots,.pos-site .story-dots,.pos-site .carousel-dots,.pos-site .slider-dots,.pos-site .pos-idea-pagination{display:none!important}
+@media(max-width:650px){.pos-site .unified-story .feature-list>div{padding-left:48px}.pos-site .seo-faq details{padding:18px}}
