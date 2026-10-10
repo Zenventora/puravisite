@@ -279,3 +279,28 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 .social-footer>b{display:block;margin-bottom:15px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#344054}
 @media(max-width:900px){.product-footer{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.product-footer{grid-template-columns:1fr}}
+
+
+/* Brand-consistent social icons: recognizable platform colours with accessible contrast. */
+.social-links a[aria-label="Facebook"]{background:#1877F2;border-color:#1877F2}
+.social-links a[aria-label="Instagram"]{background:linear-gradient(135deg,#833AB4 0%,#C13584 48%,#FCAF45 100%);border-color:#C13584}
+.social-links a[aria-label="X / Twitter"],.social-links a[aria-label="X"]{background:#111827;border-color:#111827}
+.social-links a[aria-label="Threads"]{background:#101010;border-color:#101010}
+.social-links a[aria-label="LinkedIn"]{background:#0A66C2;border-color:#0A66C2}
+.social-links a[aria-label="WhatsApp"]{background:#25D366;border-color:#25D366}
+.social-links a[aria-label="YouTube"]{background:#FF0033;border-color:#FF0033}
+.social-links a[aria-label="Facebook"] img,.social-links a[aria-label="Instagram"] img,.social-links a[aria-label="X / Twitter"] img,.social-links a[aria-label="X"] img,.social-links a[aria-label="Threads"] img,.social-links a[aria-label="LinkedIn"] img,.social-links a[aria-label="WhatsApp"] img,.social-links a[aria-label="YouTube"] img{filter:brightness(0) invert(1)}
+.social-links a:focus-visible{outline:3px solid #235BDE;outline-offset:3px}
+
+/* Shared section rhythm for product pages: match Puravigal's calm, alternating story layout. */
+.pos-site main>.section:not(.seo-faq),.pos-site main>section.section{scroll-margin-top:100px}
+.pos-site .seo-faq>.container{width:min(1180px,92%);max-width:1180px}
+.pos-site .seo-faq .section-head{max-width:760px;margin-left:0;margin-right:auto}
+.pos-site .seo-faq .section-head h2{letter-spacing:-.035em}
+.pos-site .seo-faq details{max-width:none}
+.pos-site .feature-story,.pos-site .feature-story.alt{border-radius:0}
+.pos-site .feature-story .container{align-items:center}
+.pos-site .feature-story.alt{background:linear-gradient(110deg,rgba(35,91,222,.035),rgba(230,0,99,.035))}
+.pos-site .pos-product-band,.pos-site .pos-closing-story{background:linear-gradient(110deg,rgba(35,91,222,.06),rgba(230,0,99,.06))}
+.pos-site .pos-resource-hero{background:radial-gradient(circle at 78% 18%,rgba(230,0,99,.10),transparent 30%),linear-gradient(110deg,rgba(35,91,222,.08),rgba(230,0,99,.06),#fff)}
+@media(prefers-reduced-motion:reduce){.social-links a,.business-fit-list>a,.resource-card,.faq-section .faq details,.seo-faq details{transition:none!important;scroll-behavior:auto!important}}
