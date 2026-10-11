@@ -162,7 +162,7 @@
 .industry-card{overflow:hidden}.industry-card:hover img{transform:scale(1.025);transition:.25s ease}
 
 /* Footer alignment */
-footer .footer-grid:not(.product-footer){grid-template-columns:minmax(240px,2fr) repeat(4,minmax(120px,1fr));align-items:start}
+footer .footer-grid:not(.product-footer){grid-template-columns:minmax(240px,2fr) repeat(3,minmax(120px,1fr));align-items:start}
 footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 @media(max-width:900px){footer .footer-grid:not(.product-footer),footer .product-footer{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){footer .footer-grid:not(.product-footer),footer .product-footer{grid-template-columns:1fr}}
@@ -311,7 +311,7 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 
 /* Navigation state and social footer layout: no pill/background for active links. */
 .site-header nav a.is-active,.product-header nav a.is-active{color:inherit;background:transparent;border-radius:0}
-.product-footer{grid-template-columns:1.6fr .85fr .85fr .85fr 1.2fr}
+.product-footer{grid-template-columns:1.6fr .85fr .85fr .85fr}
 .social-footer>b{display:block;margin-bottom:15px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#344054}
 @media(max-width:900px){.product-footer{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.product-footer{grid-template-columns:1fr}}
@@ -376,3 +376,6 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 @media(max-width:650px){.resource-article{width:92%}.resource-article h2{margin-top:32px}.resource-article details{padding:18px}}
 
 @media(max-width:650px){.page-hero-centered h1{font-size:clamp(36px,10vw,48px)}.resource-grid{grid-template-columns:1fr!important}.resource-card{min-height:0}}
+
+/* Temporarily hide social-follow columns on both shared footers; remove this rule to restore them. */
+.site-footer-social,.social-footer{display:none!important}
