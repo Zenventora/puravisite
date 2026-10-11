@@ -95,3 +95,15 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Removed duplicate “Follow Puravigal” social block from the restaurant vertical footer.
 - [ ] Identify and remove any actual carousel pagination markup from the requested idea/story section; current POS homepage source inspection did not find visible dot pagination in the identified workflow/about sections. Do not hide unrelated controls.
 - [ ] Run full deployed visual QA at desktop/tablet/mobile and validate actual image load, CTA contrast, keyboard focus, and login/signup session flow.
+
+
+## 2026-10-11 — latest page-pattern and navigation pass
+
+- [x] Removed the four-dot slider-like decoration under the main Puravigal idea section; its adjacent workflow cards remain the explanatory content.
+- [x] Added a shared centered hero treatment to About, Careers and Contact text-only banners, including centered headings, descriptions and CTA groups.
+- [x] Removed Business types from the main-site navigation/footer and redirected the legacy `/business-types.html` URL to the POS-specific `/pos/industries/` section. Removed the redirected URL from the main sitemap.
+- [x] Unified POS Resources cards to equal-width/equal-weight responsive columns; removed the oversized featured card treatment.
+- [x] Removed a duplicate social footer block from the POS business-types index.
+- [x] Added a restaurant illustration fallback on the POS business-types index; the underlying SVG exists in the repository, so verify its deployed request and rendering.
+- [x] Changed all main/POS login links to `https://pos.puravigal.com/` and signup links to `https://pos.puravigal.com/?signup=true`; session CTA check remains API-dependent and requires live validation.
+- [ ] Remaining: implement/test the POS header Business types dropdown with all vertical links; review all page heroes and left/right story sections; validate actual app session/CORS; run live link/image, OG preview, structured-data, mobile, accessibility and performance checks. Do not mark those passed until evidence is recorded.
