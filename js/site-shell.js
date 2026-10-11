@@ -32,7 +32,7 @@
       '<div><b>Products</b><a href="' + local("pos/") + '">Puravigal POS</a></div>' +
       '<div><b>Company</b><a href="' + local("about-us.html") + '">About</a><a href="' + local("careers.html") + '">Careers</a><a href="' + local("contact.html") + '">Contact</a></div>' +
       '<div><b>Legal</b><a href="' + local("privacy-policy.html") + '">Privacy Policy</a><a href="' + local("terms-and-conditions.html") + '">Terms &amp; Conditions</a></div>' +
-      '<div><b>Follow Puravigal</b><div class="social-links">' +
+      '<div class="site-footer-social"><b>Follow Puravigal</b><div class="social-links">' +
         '<span class="social-pending" role="img" aria-label="LinkedIn link not provided yet" title="LinkedIn link pending"><img src="' + local("images/icons/linkedin.svg") + '" alt=""></span>' +
         '<a href="https://www.facebook.com/puravigal" aria-label="Facebook"><img src="' + local("images/icons/facebook.svg") + '" alt=""></a>' +
         '<a href="https://instagram.com/puravigal/" aria-label="Instagram"><img src="' + local("images/icons/instagram.svg") + '" alt=""></a>' +
