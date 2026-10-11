@@ -107,3 +107,13 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Added a restaurant illustration fallback on the POS business-types index; the underlying SVG exists in the repository, so verify its deployed request and rendering.
 - [x] Changed all main/POS login links to `https://pos.puravigal.com/` and signup links to `https://pos.puravigal.com/?signup=true`; session CTA check remains API-dependent and requires live validation.
 - [ ] Remaining: implement/test the POS header Business types dropdown with all vertical links; review all page heroes and left/right story sections; validate actual app session/CORS; run live link/image, OG preview, structured-data, mobile, accessibility and performance checks. Do not mark those passed until evidence is recorded.
+
+
+## Corrections completed in this pass (2026-10-11)
+
+- [x] Fixed the malformed XML entity in `images/business-types/restaurant-cafe.svg`: `Restaurant & Café` is now encoded as `Restaurant &amp; Café`. This addresses the parser error visible in the supplied screenshot.
+- [x] Added `js/site-shell.js` as the shared header/footer renderer for the main Puravigal site.
+- [x] Updated the main homepage, About, Careers, Contact, Privacy Policy and Terms pages to mount the same main-site header/footer shell.
+- [ ] Verify on GitHub Pages preview and the custom domain that shared shell assets and links resolve correctly from both hosting roots.
+- [ ] Verify mobile menu behavior after shell injection; ensure `js/site.js` initializes the injected navigation after the shell renders.
+- [ ] POS intentionally remains a separate shell and needs its own consistency pass.
