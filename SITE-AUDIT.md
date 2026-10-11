@@ -151,3 +151,10 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Added visible FAQs and FAQPage structured data to the POS resources index; the three guide pages already contain FAQ content.
 - [x] Checked all four resource pages for title, meta description, canonical, OG image, shared POS header/footer mounts and shell script references.
 - [ ] Browser-check banner spacing at desktop/mobile widths and verify FAQ accordion interaction and outbound links after deployment.
+
+
+## 404 page alignment correction (2026-10-11)
+
+- [x] Centered the 404 CTA button group horizontally and aligned button heights consistently.
+- [x] Added mobile behavior so CTAs stack full-width with clean spacing on narrow screens.
+- [ ] Verify deployed desktop and mobile rendering after Pages refresh.
