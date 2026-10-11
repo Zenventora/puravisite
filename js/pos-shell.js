@@ -92,6 +92,9 @@
     });
     nav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
+        /* On mobile, the Business types trigger expands its submenu; do not close the whole menu. */
+        if (link.classList.contains("pos-dropdown-trigger") &&
+            window.matchMedia("(max-width: 900px)").matches) return;
         nav.classList.remove("open");
         menu.setAttribute("aria-expanded", "false");
       });
