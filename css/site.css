@@ -12,6 +12,27 @@
 .product-header nav{display:flex;align-items:center;gap:5px}
 .product-header nav a{padding:10px 12px;color:#4b5568;font-size:14px;font-weight:650}
 .product-header nav a:hover{color:var(--product)}
+
+/* POS business-type dropdown: hover/focus on desktop, tap on mobile. */
+.pos-nav-dropdown{position:relative;display:flex;align-items:center}
+.pos-dropdown-trigger{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.dropdown-chevron{font-size:18px;line-height:1;transition:transform .18s ease}
+.pos-nav-dropdown:hover .dropdown-chevron,.pos-nav-dropdown:focus-within .dropdown-chevron,.pos-nav-dropdown.is-open .dropdown-chevron{transform:rotate(180deg)}
+.pos-dropdown-menu{position:absolute;z-index:1000;top:calc(100% + 10px);left:0;display:none;min-width:230px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 18px 45px rgba(24,32,51,.14)}
+.pos-dropdown-menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
+.pos-nav-dropdown:hover .pos-dropdown-menu,.pos-nav-dropdown:focus-within .pos-dropdown-menu,.pos-nav-dropdown.is-open .pos-dropdown-menu{display:block}
+.product-header .pos-dropdown-menu a{display:flex;align-items:center;padding:11px 13px;border-radius:9px;color:#4b5568;font-size:14px;font-weight:650;white-space:nowrap}
+.product-header .pos-dropdown-menu a:hover,.product-header .pos-dropdown-menu a:focus-visible{background:#f2f4ff;color:var(--product);outline:none}
+.pos-dropdown-menu a[aria-current="page"]{background:#f2f4ff;color:var(--product)}
+@media(max-width:900px){
+ .product-header nav.open{display:flex;flex-direction:column;align-items:stretch;gap:4px}
+ .product-header nav .pos-nav-dropdown{display:block;width:100%}
+ .product-header nav .pos-dropdown-trigger{width:100%;justify-content:space-between}
+ .product-header nav .pos-dropdown-menu{position:static;min-width:0;margin:4px 0 8px;box-shadow:none;border-radius:12px;background:#f8f9ff}
+ .product-header nav .pos-dropdown-menu::before{display:none}
+ .product-header nav .pos-nav-dropdown:not(.is-open) .pos-dropdown-menu{display:none}
+ .product-header nav .pos-nav-dropdown.is-open .pos-dropdown-menu{display:block}
+}
 .product-nav-cta{background:var(--product-gradient)!important;color:#fff!important;border-radius:10px!important}
 .product-hero{padding:100px 0 85px;background:radial-gradient(circle at 75% 20%,rgba(107,82,217,.18),transparent 32%),radial-gradient(circle at 88% 82%,rgba(75,102,232,.10),transparent 30%),#fff}
 .product-hero-copy{max-width:900px}
