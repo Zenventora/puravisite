@@ -127,3 +127,10 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] POS folder now uses its own footer structure; Business types links remain within POS.
 - [x] Main-site header active-state logic checks hash links so Products/FAQ section links are not both shown active on the homepage when no matching hash is selected.
 - [ ] Verify browser rendering, keyboard/mobile navigation, API credential/CORS behavior and all generated links on GitHub Pages preview and custom domain.
+
+
+## Header/footer rendering incident (2026-10-11)
+
+- [x] Rewrote `js/site-shell.js` using DOM element construction instead of nested template-string markup, removing the syntax failure that prevented shared header/footer injection.
+- [ ] Recheck the deployed GitHub Pages preview after cache refresh.
+- [ ] Authentication status request to `https://pos.puravigal.com/api/auth/status` returns 401 and is blocked by missing CORS allow-origin header from the API. The API/backend must allow the preview origin (and production origin) with credentials for session detection to work; frontend code cannot override this server response.
