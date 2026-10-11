@@ -117,3 +117,13 @@ This is the running audit record. Add every newly reported correction here and k
 - [ ] Verify on GitHub Pages preview and the custom domain that shared shell assets and links resolve correctly from both hosting roots.
 - [ ] Verify mobile menu behavior after shell injection; ensure `js/site.js` initializes the injected navigation after the shell renders.
 - [ ] POS intentionally remains a separate shell and needs its own consistency pass.
+
+
+## Shared navigation and folder-specific shells (2026-10-11)
+
+- [x] Added `js/pos-shell.js` for POS-specific shared header/footer across overview, features, pricing, resources, business-type index, six vertical pages, resource guides and POS account pages.
+- [x] POS header active state is set for Overview, Features, Pricing, Business types, and Resources; vertical pages share the Business types active state, guides share Resources.
+- [x] POS CTA points to `https://pos.puravigal.com/?signup=true` by default and switches to `https://pos.puravigal.com/` with “Access Now” when the auth-status API reports an authenticated session.
+- [x] POS folder now uses its own footer structure; Business types links remain within POS.
+- [x] Main-site header active-state logic checks hash links so Products/FAQ section links are not both shown active on the homepage when no matching hash is selected.
+- [ ] Verify browser rendering, keyboard/mobile navigation, API credential/CORS behavior and all generated links on GitHub Pages preview and custom domain.
