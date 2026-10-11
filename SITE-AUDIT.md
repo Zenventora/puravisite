@@ -134,3 +134,11 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Rewrote `js/site-shell.js` using DOM element construction instead of nested template-string markup, removing the syntax failure that prevented shared header/footer injection.
 - [ ] Recheck the deployed GitHub Pages preview after cache refresh.
 - [ ] Authentication status request to `https://pos.puravigal.com/api/auth/status` returns 401 and is blocked by missing CORS allow-origin header from the API. The API/backend must allow the preview origin (and production origin) with credentials for session detection to work; frontend code cannot override this server response.
+
+
+## POS shared header/footer rendering fix (2026-10-11)
+
+- [x] Rewrote `js/pos-shell.js` to use DOM construction rather than nested template literals, matching the robust approach used for the main-site shell.
+- [x] Verified repository references for all 16 POS pages: each has header/footer mount points and a correctly relative `pos-shell.js` script path.
+- [ ] Browser-verify deployed POS pages, active navigation, mobile menu and footer links after deployment/cache refresh.
+- [ ] Session detection remains dependent on backend CORS support for the preview origin; signup CTA remains visible when the status request fails.
