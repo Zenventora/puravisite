@@ -186,3 +186,14 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] POS mobile menu uses a compact hamburger icon; expanding Business types no longer closes the entire mobile menu.
 - [ ] Live signup plan selection and authenticated-session CTA require browser verification. The session-status API must permit credentialed CORS requests from the public site origin for logged-in users to reliably see Access Now.
 - [ ] Desktop/tablet/mobile visual QA still pending.
+
+
+## POS footer parity and social icons (2026-10-11)
+
+- [x] Matched POS footer column proportions and responsive behavior to the main Puravigal footer pattern.
+- [x] Kept one Follow Puravigal group in the shared POS footer renderer.
+- [x] Enabled LinkedIn, Facebook, Instagram, X, Threads, WhatsApp and YouTube icons; confirmed all seven local SVG assets exist.
+- [x] Reused the known Puravigal Facebook, Instagram, X and Threads URLs.
+- [x] Added clearly marked, non-navigating placeholder anchors for LinkedIn, WhatsApp and YouTube so their URLs can be replaced later without disabled-looking icons.
+- [x] Desktop keeps the social icons on one row; smaller layouts wrap cleanly without pushing the social heading into a separate duplicate group.
+- [ ] Confirm visual parity against the live main-site footer and test at desktop/tablet/mobile breakpoints.
