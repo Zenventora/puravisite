@@ -167,3 +167,11 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Standardized inline FAQ accordions on resource guides (padding, borders, open state, plus/minus affordance) and kept the resource index FAQ on the shared `.seo-faq` design.
 - [x] Verified resource index and three guides have unique titles, meta descriptions, canonical URLs, OG images and POS shell mounts.
 - [ ] Visual browser verification at desktop/tablet/mobile sizes remains to be completed.
+
+
+## POS business-types dropdown (2026-10-11)
+
+- [x] Replaced the single Business types navigation link with a dropdown trigger that still links to the Business Types overview.
+- [x] Added links for Retail, Restaurant, Café, Mobile shop, Supermarket, and Grocery / provision store.
+- [x] Added desktop hover and keyboard-focus behavior, mobile tap-to-expand behavior, accessible expanded state, and Escape-to-close support.
+- [ ] Verify deployed dropdown interaction on desktop and mobile browsers.
