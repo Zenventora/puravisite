@@ -158,3 +158,12 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Centered the 404 CTA button group horizontally and aligned button heights consistently.
 - [x] Added mobile behavior so CTAs stack full-width with clean spacing on narrow screens.
 - [ ] Verify deployed desktop and mobile rendering after Pages refresh.
+
+
+## Resource pages visual unification (2026-10-11)
+
+- [x] Confirmed all four POS resource pages use the same vertically and horizontally centered `.page-hero-centered` banner pattern as About and Careers.
+- [x] Added a reusable `.resource-article` class to the three long-form resource guides for consistent readable width, heading hierarchy, paragraph/list rhythm, and mobile spacing.
+- [x] Standardized inline FAQ accordions on resource guides (padding, borders, open state, plus/minus affordance) and kept the resource index FAQ on the shared `.seo-faq` design.
+- [x] Verified resource index and three guides have unique titles, meta descriptions, canonical URLs, OG images and POS shell mounts.
+- [ ] Visual browser verification at desktop/tablet/mobile sizes remains to be completed.
