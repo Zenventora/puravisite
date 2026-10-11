@@ -224,3 +224,10 @@ This is the running audit record. Add every newly reported correction here and k
 
 ### Release status
 Repository-level checks are not a guarantee of Google indexing, AI citations, ranking, or a 100/100 performance score. Do not mark the site fully release-verified until the live-only checks above are completed.
+
+
+### Static repository link/media scan — 2026-10-11
+- [x] Scanned local `href` and `src` references in the homepage, main company/legal pages, 404, POS overview, Features, Pricing, Resources index, Business Types overview, all six POS vertical pages, all three resource guides and login/signup pages.
+- [x] No missing local file references or broken local image references were found in the scanned HTML. Links to `/pos/` and `/pos/industries/` are valid directory routes that resolve to their `index.html` pages on the static host.
+- [x] Added OG/Twitter share metadata and WebPage schema to the five main company/legal pages that previously lacked them.
+- [ ] Static source checks cannot verify live HTTP response status, DNS, deployed cache, JavaScript runtime exceptions, third-party link destinations, accessibility tree, or Lighthouse scores.
