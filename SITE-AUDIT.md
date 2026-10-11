@@ -142,3 +142,12 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Verified repository references for all 16 POS pages: each has header/footer mount points and a correctly relative `pos-shell.js` script path.
 - [ ] Browser-verify deployed POS pages, active navigation, mobile menu and footer links after deployment/cache refresh.
 - [ ] Session detection remains dependent on backend CORS support for the preview origin; signup CTA remains visible when the status request fails.
+
+
+## POS resources banner and page review (2026-10-11)
+
+- [x] Centered resource page banner content horizontally and vertically across `/pos/resources.html` and all three resource guide pages using the shared `.page-hero-centered` CSS pattern.
+- [x] Removed duplicate Open Graph/Twitter metadata on `/pos/resources.html`.
+- [x] Added visible FAQs and FAQPage structured data to the POS resources index; the three guide pages already contain FAQ content.
+- [x] Checked all four resource pages for title, meta description, canonical, OG image, shared POS header/footer mounts and shell script references.
+- [ ] Browser-check banner spacing at desktop/mobile widths and verify FAQ accordion interaction and outbound links after deployment.
