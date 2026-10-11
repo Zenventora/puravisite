@@ -246,6 +246,9 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 .not-found-page{min-height:calc(100vh - 170px);display:grid;place-items:center;padding:70px 0;background:radial-gradient(circle at 20% 20%,rgba(35,91,222,.10),transparent 30%),radial-gradient(circle at 80% 70%,rgba(230,0,99,.08),transparent 30%),#fff}
 .not-found-card{max-width:850px;text-align:center;padding:clamp(28px,6vw,72px);border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.9);box-shadow:var(--shadow)}
 .not-found-card .eyebrow{margin-bottom:0}.not-found-code{margin:0;font-size:clamp(90px,19vw,180px);font-weight:800;line-height:1;letter-spacing:-.08em;background:var(--gradient);color:transparent;background-clip:text;-webkit-background-clip:text}.not-found-card h1{font-size:clamp(32px,5vw,52px);line-height:1.1;letter-spacing:-.04em;margin:18px 0}.not-found-card .lead{margin:0 auto;max-width:640px;font-size:18px}
+.not-found-card .actions{justify-content:center;align-items:center;gap:12px;margin-top:30px}
+.not-found-card .actions .btn{min-height:52px}
+@media(max-width:640px){.not-found-card{width:92%;padding:32px 22px}.not-found-card .actions{width:100%;flex-direction:column;align-items:stretch}.not-found-card .actions .btn{width:100%}.not-found-card h1{font-size:clamp(30px,8vw,42px)}}
 /* FAQs use the same full-width container rhythm as adjacent sections. */
 .faq-section>.container,.seo-faq>.container{width:min(1180px,92%);max-width:1180px}
 .faq-section .faq,.seo-faq .faq{max-width:none}
