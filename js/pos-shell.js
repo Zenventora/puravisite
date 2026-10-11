@@ -17,7 +17,7 @@
         '<a data-nav="overview" href="' + local("pos/") + '">Overview</a>' +
         '<a data-nav="features" href="' + local("pos/features.html") + '">Features</a>' +
         '<a data-nav="pricing" href="' + local("pos/pricing.html") + '">Pricing</a>' +
-        '<a data-nav="business-types" href="' + local("pos/industries/") + '">Business types</a>' +
+        '<div class="pos-nav-dropdown" data-business-dropdown><a data-nav="business-types" class="pos-dropdown-trigger" href="' + local("pos/industries/") + '" aria-haspopup="true" aria-expanded="false">Business types <span class="dropdown-chevron" aria-hidden="true">⌄</span></a><div class="pos-dropdown-menu" aria-label="Business types"><a href="' + local("pos/industries/retail.html") + '">Retail</a><a href="' + local("pos/industries/restaurant.html") + '">Restaurant</a><a href="' + local("pos/industries/cafe.html") + '">Café</a><a href="' + local("pos/industries/mobile-shop.html") + '">Mobile shop</a><a href="' + local("pos/industries/supermarket.html") + '">Supermarket</a><a href="' + local("pos/industries/grocery.html") + '">Grocery / provision store</a></div></div>' +
         '<a data-nav="resources" href="' + local("pos/resources.html") + '">Resources</a>' +
         '<a href="https://pos.puravigal.com/">Log in</a>' +
         '<a data-pos-cta class="product-nav-cta" href="https://pos.puravigal.com/?signup=true">Get Started Free</a>' +
@@ -60,6 +60,28 @@
     if (selected) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
   });
+
+  var dropdown = header.querySelector("[data-business-dropdown]");
+  if (dropdown) {
+    var trigger = dropdown.querySelector(".pos-dropdown-trigger");
+    var dropdownMenu = dropdown.querySelector(".pos-dropdown-menu");
+    if (trigger && dropdownMenu) {
+      trigger.addEventListener("click", function (event) {
+        if (window.matchMedia("(max-width: 900px)").matches) {
+          event.preventDefault();
+          var open = dropdown.classList.toggle("is-open");
+          trigger.setAttribute("aria-expanded", String(open));
+        }
+      });
+      dropdown.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          dropdown.classList.remove("is-open");
+          trigger.setAttribute("aria-expanded", "false");
+          trigger.focus();
+        }
+      });
+    }
+  }
 
   var menu = header.querySelector(".product-menu-btn");
   var nav = header.querySelector("nav");
