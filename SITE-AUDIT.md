@@ -197,3 +197,30 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Added clearly marked, non-navigating placeholder anchors for LinkedIn, WhatsApp and YouTube so their URLs can be replaced later without disabled-looking icons.
 - [x] Desktop keeps the social icons on one row; smaller layouts wrap cleanly without pushing the social heading into a separate duplicate group.
 - [ ] Confirm visual parity against the live main-site footer and test at desktop/tablet/mobile breakpoints.
+
+
+## Final pre-release audit — 2026-10-11
+
+### Repository structure and crawl discovery
+- [x] Confirmed the root `sitemap.xml` is a sitemap index pointing to `sitemap-main.xml` and `pos/sitemap.xml`.
+- [x] Confirmed the main sitemap lists the canonical homepage, About, Contact, Careers, Privacy Policy and Terms pages.
+- [x] Confirmed the POS sitemap lists the POS overview, Features, Pricing, Resources index, Business Types overview, six vertical pages and three resource guides (14 POS URLs).
+- [x] Confirmed `robots.txt` allows crawling and points to the root sitemap index.
+- [x] Confirmed the legacy root `business-types.html` is a noindex redirect to `/pos/industries/`, and is intentionally excluded from the sitemap.
+- [x] Confirmed the 404 page has `noindex,follow` and helpful routes back to the site.
+- [x] Confirmed login/signup pages are `noindex,follow` and excluded from public sitemaps.
+- [x] Added Open Graph and Twitter large-image metadata plus WebPage structured data to About, Careers, Contact, Privacy Policy and Terms pages.
+- [x] Confirmed public POS pages and guides have unique titles/descriptions, canonical URLs, social-sharing image metadata and favicon references.
+- [x] Confirmed the restaurant/café illustration source in the repository uses XML-escaped `&amp;` for the ampersand, which is valid XML. If the live browser still shows the XML parser error, verify the deployed asset response/cache and confirm it matches this repository file.
+
+### Organic search and AI-search readiness
+- [x] Page targets are intent-based and separated by page (small-business POS, billing/inventory, retail, restaurant, café, mobile shop, supermarket, grocery, pricing and POS selection guides).
+- [x] Visible FAQs and relevant structured data exist on the main homepage and primary POS/product/vertical pages.
+- [ ] Search Console ownership, sitemap submission, indexing/canonical reports and Core Web Vitals field data must be checked in the property owner account.
+- [ ] Actual keyword demand/seasonality and landing-page performance must be validated with Search Console and Keyword Planner; no search-volume figures are assumed here.
+- [ ] Real-user mobile/desktop visual QA, keyboard-only navigation, screen-reader labels, automated accessibility scans, Lighthouse/PageSpeed and broken-link/image HTTP checks require a live browser/crawler run.
+- [ ] Live DNS/custom-domain, redirect/canonical consistency, deployed CORS/session status endpoint and free/standard signup routing must be end-to-end tested on `www.puravigal.com` and `pos.puravigal.com`.
+- [ ] Replace the LinkedIn, WhatsApp and YouTube placeholder/pending URLs in shared header/footer once official profiles are confirmed.
+
+### Release status
+Repository-level checks are not a guarantee of Google indexing, AI citations, ranking, or a 100/100 performance score. Do not mark the site fully release-verified until the live-only checks above are completed.
