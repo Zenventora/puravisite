@@ -175,3 +175,14 @@ This is the running audit record. Add every newly reported correction here and k
 - [x] Added links for Retail, Restaurant, Café, Mobile shop, Supermarket, and Grocery / provision store.
 - [x] Added desktop hover and keyboard-focus behavior, mobile tap-to-expand behavior, accessible expanded state, and Escape-to-close support.
 - [ ] Verify deployed dropdown interaction on desktop and mobile browsers.
+
+
+## POS plan routing, footer and mobile QA (2026-10-11)
+
+- [x] Standard plan CTA on pricing routes to `https://pos.puravigal.com/?signup=true&plan=standard`.
+- [x] Free pricing CTA routes to `https://pos.puravigal.com/?signup=true&plan=free`.
+- [x] General POS free CTAs route to `https://pos.puravigal.com/?signup=true` (default signup flow; no plan override).
+- [x] POS footer uses a dedicated five-column desktop grid so the Follow Puravigal social block stays in the same row.
+- [x] POS mobile menu uses a compact hamburger icon; expanding Business types no longer closes the entire mobile menu.
+- [ ] Live signup plan selection and authenticated-session CTA require browser verification. The session-status API must permit credentialed CORS requests from the public site origin for logged-in users to reliably see Access Now.
+- [ ] Desktop/tablet/mobile visual QA still pending.
