@@ -427,3 +427,9 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
     height:38px;
   }
 }
+
+
+/* Keep the six-item POS industry capability grids balanced. */
+.pos-site .use-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:900px){.pos-site .use-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.pos-site .use-grid{grid-template-columns:1fr}}
