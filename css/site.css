@@ -381,3 +381,49 @@ footer .product-footer{grid-template-columns:2fr 1fr 1fr 1fr;align-items:start}
 
 /* Temporarily hide social-follow columns on both shared footers; remove this rule to restore them. */
 .site-footer-social,.social-footer{display:none!important}
+
+
+/* Global FAQ alignment fix: keep every accordion toggle vertically centered beside its question. */
+.faq summary,
+.faq-section .faq summary,
+.seo-faq summary,
+.resource-article summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  min-height:44px;
+  padding-right:0;
+  line-height:1.45;
+}
+.faq summary::after,
+.faq-section .faq summary::after,
+.seo-faq summary::after,
+.resource-article summary::after{
+  position:static;
+  top:auto;
+  right:auto;
+  transform:none;
+  flex:0 0 44px;
+  width:44px;
+  height:44px;
+  margin-left:auto;
+  box-sizing:border-box;
+}
+@media(max-width:650px){
+  .faq summary,
+  .faq-section .faq summary,
+  .seo-faq summary,
+  .resource-article summary{
+    gap:12px;
+    min-height:38px;
+  }
+  .faq summary::after,
+  .faq-section .faq summary::after,
+  .seo-faq summary::after,
+  .resource-article summary::after{
+    flex-basis:38px;
+    width:38px;
+    height:38px;
+  }
+}
